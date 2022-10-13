@@ -1,0 +1,143 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 670px;
+    position: relative;
+    background: url("images/night.jpg") no-repeat;
+    background-size: cover;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.box {
+    z-index: 11;
+    position: relative;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+    align-content: space-around;
+    flex-wrap: wrap;
+    transform: translate(0, 40px);
+    width: 450px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, .2);
+    border: 10px;
+    padding: 20px 40px;
+    border-radius: 20px;
+}
+
+.box h1 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    color: #fff;
+    font-size: 30px;
+}
+
+.box .input {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.input .text {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.text span {
+    color: white;
+    font-size: 18px;
+    margin-top: 20px;
+}
+
+.text input {
+    border: 0;
+    padding: 6px;
+    border-bottom: 1px solid white;
+    background-color: transparent;
+    color: #fff;
+    margin-top: 20px;
+}
+
+button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 25px;
+    width: 145px;
+    height: 25px;
+    color: #fff;
+    border-radius: 15px;
+    background: linear-gradient(45deg, #e1eec3, #f05053);
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.container {
+    z-index: 2;
+    position: absolute;
+    bottom: 44px;
+    width: 200px;
+    height: 100px;
+    background: url(images/bear.png) no-repeat;
+    animation: container .8s steps(8) infinite, move 1.5s linear .3s forwards;
+}
+
+@keyframes container {
+    0% {}
+
+    100% {
+        background-position: -1600px 0;
+    }
+
+}
+
+@keyframes move {
+    0% {
+        left: 0;
+    }
+
+    100% {
+        left: 50%;
+        transform: translate(-50%, 0);
+    }
+}
+
+.bg1 {
+    z-index: 1;
+    width: 1323px;
+    height: 336px;
+    background: url(images/bg5.png) no-repeat;
+    position: absolute;
+    bottom: -7px;
+    animation: yidong 40s linear 1.7s infinite;
+}
+
+.bg2 {
+    width: 1323px;
+    height: 569px;
+    background: url(images/bg6.png) no-repeat;
+    position: absolute;
+    bottom: -7px;
+    animation: yidong 110s linear 1.7s infinite;
+
+}
+
+@keyframes yidong {
+    0% {}
+
+    100% {
+        background-position: -3840px, 0;
+    }
+}
