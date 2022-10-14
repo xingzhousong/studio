@@ -8,4 +8,6 @@
 
 Github https://github.com/xingzhousong/studio  main分支
 
+这三份文档也同时存在于Github
+
 ##### 注：登录界面是点顶部框的小用户图标跳转
