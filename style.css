@@ -604,6 +604,7 @@ body {
     height: 50px;
     width: 50px;
     background-color: transparent;
+    /* 拖尾效果不能这样做，框是方形的 */
     /* box-shadow: 24px -118px 36px gold; */
     cursor: pointer;
 }
@@ -708,7 +709,8 @@ body {
     left: 381px;
 }
 
-textarea {display: block;
+textarea {
+    display: block;
     resize: none;
     height: 97px;
     width: 550px;
